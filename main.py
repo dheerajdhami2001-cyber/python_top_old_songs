@@ -7,8 +7,8 @@ import pprint
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
-        client_id="ddc8977b4c6c49d780ff695effc86cf5",
-        client_secret="8dc36fa7766c479b8e78892f1600afc2",
+        client_id="YOUR_CLIENT_ID",  # Hidden
+        client_secret="YOUR_CLIENT_SECRET",  # Hidden
         redirect_uri="http://127.0.0.1:8888/callback",
         scope="playlist-modify-private",
         show_dialog=True,
@@ -42,7 +42,7 @@ for tracks in top[:11]:
 
 print(top_uri)
 
-playlist = sp.user_playlist_create(user="31fls3vbkfmr2dqafus2d46hczyi",name=f"gold of {date[:4]}-{date[4:6]}-{date[6:]}",public=False)
+playlist = sp.user_playlist_create(user=sp.current_user()["id"], name=f"gold of {date[:4]}-{date[4:6]}-{date[6:]}", public=False)
 print(playlist["id"])
 sp.playlist_add_items(playlist_id = playlist["id"],items= top_uri)
 print(f"your playlist of {len(top_uri)} is now created")
