@@ -89,6 +89,6 @@ Redirect: You will be redirected to a page (likely Not Found or Localhost). Copy
 Paste: Paste that URL into the terminal where the script is running and hit Enter. (This creates a token_new.txt file so you won't have to log in again).
 Enter Date: When prompted, type the date you want to travel to in YYYYMMDD format.
 Example: For August 12, 2000, type 20000812.
-Enjoy: Open your Spotify app, and check your Library. Your new "Time Capsule" playlist will be there!
+Enjoy: Open your Spotify app, and check your Library. Your new "Time Capsule"  playlist will be there!
 Acknowledgments
 This project was inspired by and completed with the guidance of the 100 Days of Code: The Complete Python Pro Bootcamp by Dr. Angela Yu.
