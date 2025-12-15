@@ -22,7 +22,7 @@ By combining web scraping with the Spotify API, this tool fetches historical cha
 -   **[Spotipy](https://spotipy.readthedocs.io/)**: A lightweight Python library for the Spotify Web API. It handles the complex OAuth authentication and API requests.
 -   **[Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/)**: Used for parsing HTML and scraping song titles from historical chart archives.
 -   **[Requests](https://pypi.org/project/requests/)**: Used to fetch the HTML data from the chart website.
--   **pprint**: Utilized during development to "pretty print" the complex JSON responses from Spotify, making the data structure easier to read and understand.
+-   **pprint**: Utilized to structure the complex JSON responses from Spotify for better readability.
 
 ## Project Setup
 
@@ -79,15 +79,34 @@ sp = spotipy.Spotify(
     )
 )
 How to Run
+
 Run the script:
+
 code
 Bash
+download
+content_copy
+expand_less
 python main.py
+
 Authentication: The first time you run this, a browser window will open asking you to authorize the app to access your Spotify account. Click Agree.
+
 Redirect: You will be redirected to a page (likely Not Found or Localhost). Copy the entire URL from your browser's address bar.
+
 Paste: Paste that URL into the terminal where the script is running and hit Enter. (This creates a token_new.txt file so you won't have to log in again).
+
 Enter Date: When prompted, type the date you want to travel to in YYYYMMDD format.
+
 Example: For August 12, 2000, type 20000812.
+
 Enjoy: Open your Spotify app, and check your Library. Your new "Time Capsule" playlist will be there!
+
 Acknowledgments
+
 This project was inspired by and completed with the guidance of the 100 Days of Code: The Complete Python Pro Bootcamp by Dr. Angela Yu.
+
+code
+Code
+download
+content_copy
+expand_less
